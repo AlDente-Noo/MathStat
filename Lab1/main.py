@@ -1,8 +1,11 @@
+from Normal_Dist.NormalDist import task2
+from Normal_Dist.NormalDist import task1
+from Normal_Dist.NormalDist import task3
 
-import numpy as np
-import matplotlib.pyplot as plt
-from NormalDist import task1, task2
 if __name__ == '__main__':
-    sizes = [10, 50, 1000]
-    #task1(sizes)
-    task2(sizes)
+    sizes_1_2 = [10, 50, 1000]
+    sizes_3 = [20, 100]
+    times = 1000
+    #task1(sizes_1_2)
+    #task2(sizes_1_2)
+    task3(sizes_3, times)

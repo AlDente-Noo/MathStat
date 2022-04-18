@@ -2,6 +2,7 @@ import numpy as np
 import math as m
 import seaborn as sns
 import matplotlib.pyplot as plt
+SAVE_PATH = "..//Normal_Dist"
 ROUND_SIGNS = 6
 def mean(data):
     return np.mean(data)
@@ -75,7 +76,18 @@ def number_of_emissions(data):
     filtered = [x for x in data if x > x2 or x < x1]
     return len(filtered)
 
+def draw_boxplot_Tukey(tips, name : str):
+    plt.clf()
+    sns.set_theme(style="whitegrid")
+    sns.boxplot(data=tips, palette='rainbow', orient='h')
+    sns.despine(offset=10)
+    plt.xlabel("x")
+    plt.ylabel("n")
+    plt.title(name)
+    #plt.show()
+    plt.savefig(SAVE_PATH + str(name)+".jpg")
+    return
+
 def print_emissions(sizes : list, result : list):
     print("Emmisions[from" + str(sizes[0]) + " power selection]: " + str(result[0]))
     print("Emmisions[from" + str(sizes[1]) + " power selection]: " + str(result[1]))
-
