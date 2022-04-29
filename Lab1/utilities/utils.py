@@ -84,7 +84,7 @@ def draw_boxplot_Tukey(tips, name : str):
     plt.xlabel("x")
     plt.ylabel("n")
     plt.title(name)
-    #plt.show()
+    plt.show()
     plt.savefig(SAVE_PATH + str(name)+".jpg")
     return
 
