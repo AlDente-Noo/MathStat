@@ -2,7 +2,7 @@ import numpy as np
 import math as m
 import seaborn as sns
 import matplotlib.pyplot as plt
-SAVE_PATH = "..//Normal_Dist"
+SAVE_PATH = "..//Uniform_Dist"
 ROUND_SIGNS = 6
 def mean(data):
     return np.mean(data)
