@@ -1,12 +1,10 @@
 import numpy as np
 import scipy.stats as stats
 import math as m
-
 from task1 import count_coefficients, create_table, multivariate_normal, show_ellipse, mix_multivariate_normal
 from task2 import reference_noisy_function, plot_linear_regression
 from task3 import task3Solver
 from task4 import normal, mean, dispersion_exp, draw_result, task4, task4_asymp
-
 # TASK 1 CODE
 def task1_builder():
     sizes = [20, 60, 100]
@@ -63,7 +61,7 @@ def task4_builder():
     task4_asymp(x_set, n_set)
     return
 
-task1_builder()
-task2_builder()
-task3_builder()
+#task1_builder()
+#task2_builder()
+#task3_builder()
 task4_builder()
